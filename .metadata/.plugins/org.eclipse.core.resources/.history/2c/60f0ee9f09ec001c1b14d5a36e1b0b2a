@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ProjetoCompleto {
 
-	public static int contador1 , contador2 , contador3 = 1;
+	public static int contador1 = 1, contador2, contador3;
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) throws InterruptedException {
@@ -14,6 +14,36 @@ public class ProjetoCompleto {
 		
 		int idade;
 		String nome;
+		
+		if(contador1 > contador2 && contador1 > contador3) {
+			System.out.println("Redes/infrastrutura\r\n"
+					+ "\r\n"
+					+ "Parabéns, você apresenta a verdadeira energia e curiosidade de um profissional de TI\n" 
+					+ "da área de Redes/Infraestrutura. Você gosta de desmontar tudo para ver como funciona \n"
+					+ "por dentro. Aqui vai algumas dicas para o começo de um estudo gratuito em hardware:\r\n"
+					+ "\r\n"
+					+ "Canal Adrenaline\r\n"
+					+ "https://www.youtube.com/playlist?list=PLB3bkcT5ue2gQdII6KKwhloyl2AvtSWL9\r\n"
+					+ "\r\n"
+					+ "Prof Washington Luis\r\n"
+					+ "https://www.youtube.com/playlist?list=PLplOmnHpWX-e5E2VOYVa5_0E8tvwxUYA8\r\n"
+					+ "\r\n"
+					+ "E se você quer aprender mais sobre hardware em um curso técnico presencial e com direito \n" 
+					+ "a bolsa de estudo gratuita em Redes e Informática, busque mais informações no link abaixo \n"
+					+ "e fique atento a novas turmas:\r\n"
+					+ "\nhttps://www.sp.senac.br/bolsas-de-estudo");
+		}
+		
+		if(contador2 > contador1 && contador2 > contador3) {
+			System.out.println("\nAlternativa numero 2");
+		}
+		
+		if(contador3 > contador2 && contador3 > contador1) {
+			System.out.println("\nAlternativa numero 3");
+	}
+		
+		
+		
 		
 		System.out.print("O");
 		Thread.sleep(300);
@@ -55,7 +85,7 @@ public class ProjetoCompleto {
 		System.out.println("\nIremos te passar algumas perguntas para podermos te mostrar\n"
 		                 + "a melhor maneira de começar a estudar para entrar no mundo tech.\n" 
 		                 + "Mas antes, escreva seu nome e sua idade.");
-		                 
+		
 		Thread.sleep(1500);
 		
 		espaço();
@@ -103,9 +133,8 @@ public class ProjetoCompleto {
 		if(contador1 > contador2 && contador1 > contador3) {
 			System.out.println("Redes/infrastrutura\r\n"
 					+ "\r\n"
-					+ "Parabéns, você apresenta a verdadeira energia e curiosidade de um profissional de TI\n" 
-					+ "da área de Redes/Infraestrutura. Você gosta de desmontar tudo para ver como funciona \n"
-					+ "por dentro. Aqui vai algumas dicas para o começo de um estudo gratuito em hardware:\r\n"
+					+ "Parabéns, você apresenta a verdadeira energia e curiosidade de um profissional de TI da área de Redes/Infraestrutura. Você\r\n"
+					+ "gosta de desmontar tudo para ver como funciona por dentro. Aqui vai algumas dicas para o começo de um estudo gratuito em hardware\r\n"
 					+ "\r\n"
 					+ "Canal Adrenaline\r\n"
 					+ "https://www.youtube.com/playlist?list=PLB3bkcT5ue2gQdII6KKwhloyl2AvtSWL9\r\n"
@@ -113,82 +142,19 @@ public class ProjetoCompleto {
 					+ "Prof Washington Luis\r\n"
 					+ "https://www.youtube.com/playlist?list=PLplOmnHpWX-e5E2VOYVa5_0E8tvwxUYA8\r\n"
 					+ "\r\n"
-					+ "E se você quer aprender mais sobre hardware em um curso técnico presencial e com direito \n" 
-					+ "a bolsa de estudo gratuita em Redes e Informática, busque mais informações no link abaixo \n"
-					+ "e fique atento a novas turmas:\r\n"
-					+ "\nhttps://www.sp.senac.br/bolsas-de-estudo");
-}
+					+ "E se você quer aprender mais sobre hardware em um curso técnico presencial e com direito a bolsa de estudo gratuita em Redes e\r\n"
+					+ "Informática, busque mais informações no link abaixo e fique atento a novas turmas:\r\n"
+					+ "https://www.sp.senac.br/bolsas-de-estudo");
+		}
 		
 		if(contador2 > contador1 && contador2 > contador3) {
-			if(idade > 30) {
-				System.out.println("Desenvolvedor;\r\n"
-								 + "\r\n"
-								 + "Parabéns, você apresenta a calma, o foco e a vontade de superar desafios que um \n"
-								 + "desenvolvedor precisa durante a sua carreira.\r\n"
-								 + "E você pode começar estudando de casa, já que temos muitos conteúdos grátis no Youtube,\n" 
-								 + "segue abaixo o link para alguns ótimos canais para iniciar os estudos nessa área:\r\n"
-								 + "\r\n"
-								 + "Curso em vídeo:\r\n"
-								 + "https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists\r\n"
-								 + "\r\n"
-								 + "CFB Cursos\r\n"
-								 + "https://www.youtube.com/c/cfbcursos/playlists\r\n"
-								 + "\r\n"
-								 + "\r\n"
-								 + "E se você busca um curso com um certificado para adicionar no seu Linkedin e currículo,\n" 
-								 + "sugerimos duas plataformas com preços bem competitivos e que cabe no seu orçamento:\r\n"
-								 + "Alura\r\n"
-								 + "\r\n"
-								 + "https://www.alura.com.br/formacoes\r\n"
-								 + "Udemy\r\n"
-								 + "\r\n"
-								 + "https://www.udemy.com/pt/ ");
-}
-			if (idade <= 30) {
-				System.out.println("Desenvolvedor;\r\n"
-								 + "\r\n"
-								 + "Parabéns, você apresenta a calma, o foco e a vontade de superar desafios que um \n"
-								 + "desenvolvedor precisa durante a sua carreira.\r\n"
-								 + "E você pode começar estudando de casa, já que temos muitos conteúdos grátis no Youtube,\n" 
-								 + "segue abaixo o link para alguns ótimos canais para iniciar os estudos nessa área:\r\n"
-								 + "\r\n"
-								 + "Curso em vídeo:\r\n"
-								 + "https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists\r\n"
-								 + "\r\n"
-								 + "CFB Cursos\r\n"
-								 + "https://www.youtube.com/c/cfbcursos/playlists\r\n"
-								 + "\r\n"
-								 + "                              **Generation**                                     \r\n"
-								 + "E se você tem vontade de viver uma verdadeira imersão no mundo do desenvolvimento, \n"
-								 + "recomendamos também os bootcamp's da Generation Brasil voltados ao desenvolvimento\n" 
-								 + "Web - JAVA, .NET e Mobile.\n" 
-								 + "Veja mais informações sobre como se cadastrarno link abaixo:\r\n"
-								 + "\nhttps://brazil.generation.org/#picker\r\n"
-								 + "\r\n");
-	}
-}
+			System.out.println("\nAlternativa numero 2");
+		}
 		
 		if(contador3 > contador2 && contador3 > contador1) {
-			System.out.println("Docente.\r\n"
-							 + "\r\n"
-							 + "Parabéns, você tem o perfil de um docente! Você apresenta as características de um bom\n"
-							 + "professor, tem empatia e preza muito pela sua vida social e amigos. Recomendamos que\n" 
-							 + "você sonhe alto e busque possibilidades no ensino superior. Bolsas governamentais\r\n"
-							 + "como o FIES, ProUni são ofertadas para quem tem uma boa pontuação no ENEM, mas você\n" 
-							 + "também pode fazer o vestibular para as Fatec's.\r\n"
-							 + "Segue o link abaixo:\r\n"
-							 + "\r\n"
-							 + "FATEC-SP\r\n"
-							 + "http://www.fatecsp.br/index.php#cursos\r\n"
-							 + "\r\n"
-							 + "FIES\r\n"
-							 + "https://www.caixa.gov.br/programas-sociais/fies/Paginas/default.aspx\r\n"
-							 + "\r\n"
-							 + "PROUNI\r\n"
-							 + "https://acessounico.mec.gov.br/prouni");
-			
+			System.out.println("\nAlternativa numero 3");
 	}
-}	
+}
 	
 			public static void pergunta1() throws InterruptedException {
 		

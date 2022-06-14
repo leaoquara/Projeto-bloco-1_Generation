@@ -15,6 +15,12 @@ public class ProjetoCompleto {
 		int idade;
 		String nome;
 		
+		
+
+		
+		
+		
+		
 		System.out.print("O");
 		Thread.sleep(300);
 		System.out.print("l");

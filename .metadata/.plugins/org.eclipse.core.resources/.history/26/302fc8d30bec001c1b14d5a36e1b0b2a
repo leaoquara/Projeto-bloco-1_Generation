@@ -12,10 +12,16 @@ public class ProjetoCompleto {
 	public static void main(String[] args) throws InterruptedException {
 		
 		
-		int idade;
+		int idade = 9;
 		String nome;
 		
-		System.out.print("O");
+		
+
+		
+		
+		
+		
+		/*System.out.print("O");
 		Thread.sleep(300);
 		System.out.print("l");
 		Thread.sleep(300);
@@ -54,8 +60,8 @@ public class ProjetoCompleto {
 		
 		System.out.println("\nIremos te passar algumas perguntas para podermos te mostrar\n"
 		                 + "a melhor maneira de começar a estudar para entrar no mundo tech.\n" 
-		                 + "Mas antes, escreva seu nome e sua idade.");
-		                 
+		                 + "Mas antes, escreva seu nome e sua idade.");*/
+		
 		Thread.sleep(1500);
 		
 		espaço();
