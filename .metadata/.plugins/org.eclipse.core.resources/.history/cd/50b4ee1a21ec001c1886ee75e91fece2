@@ -1,0 +1,12 @@
+package ProjetoBloco1;
+
+public class Contador {
+
+	public static void main(String[] args) {
+
+		int contador1, contador2, contador3;
+		
+
+	}
+
+}

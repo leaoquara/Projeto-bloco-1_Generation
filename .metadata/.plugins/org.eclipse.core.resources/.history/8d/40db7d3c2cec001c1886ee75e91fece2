@@ -1,0 +1,14 @@
+package ProjetoBloco1;
+
+public class Contador2 {
+
+	public static void main(String[] args) { 
+	}
+	
+	public static void contador2(int contador2) {
+		
+		while(contador2 <=5) {
+			contador2++;
+		} 	
+	}
+}

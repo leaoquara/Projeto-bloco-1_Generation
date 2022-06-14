@@ -1,0 +1,84 @@
+package ProjetoBloco1;
+
+import java.util.Scanner;
+
+public class Pergunta5  extends Contador{
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+
+	    System.out.print("\nQ");
+		Thread.sleep(100);
+		System.out.print("u");
+		Thread.sleep(100);
+		System.out.print("i");
+		Thread.sleep(100);
+		System.out.print("n");
+		Thread.sleep(100);
+		System.out.print("t");
+		Thread.sleep(100);
+		System.out.print("a ");
+		Thread.sleep(100);
+		System.out.print("p");
+		Thread.sleep(100);
+		System.out.print("e");
+		Thread.sleep(100);
+		System.out.print("r");
+		Thread.sleep(100);
+		System.out.print("g");
+		Thread.sleep(100);
+		System.out.print("u");
+		Thread.sleep(100);
+		System.out.print("n");
+		Thread.sleep(100);
+		System.out.print("t");
+		Thread.sleep(100);
+		System.out.print("a");
+		Thread.sleep(100);
+		System.out.print(" !\n");
+		Thread.sleep(750); 
+		
+				int contador = 0;
+				String resposta;
+				System.out.println("\nQuando faz um trabalho em grupo, você é aquele(a) que:\n");
+				System.out.println("A - Mostra compromisso em transformar o conhecimento em aprendizagem;\n");
+				System.out.println("B - Analisa bem o escopo do trabalho antes de propor ações;\n");
+				System.out.println("C - Prospera em encontrar novas maneiras de fazer algo funcionar; \n");
+			
+				System.out.print("\nResposta: ");
+				resposta = sc. next();
+				
+				while(contador == 0) {
+				
+					switch(resposta) {
+				
+						case "A","a" :
+							System.out.println("\nVocê escolheu: A.");
+						    contador ++;
+						    contador3 ++;
+							break;
+					
+						case "B","b" :
+							System.out.println("\nVocê escolheu: B.");
+							contador ++;
+							contador1 ++;
+							break;
+					
+						case "C","c" :
+							System.out.println("\nVocê escolheu: C.");
+							contador ++;
+							contador2 ++;
+							break;
+					
+						default :
+							System.out.println("\nResposta invalida !");
+							System.out.print("\nResposta: ");
+							resposta = sc. next();
+							break;
+						
+				}
+		} Thread.sleep(750);	
+	}
+}

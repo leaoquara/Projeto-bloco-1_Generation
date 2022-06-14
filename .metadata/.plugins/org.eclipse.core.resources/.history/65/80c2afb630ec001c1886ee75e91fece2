@@ -1,0 +1,31 @@
+package ProjetoBloco1;
+
+public class DesenvolvedorMaior30 {
+	public static void main(String[] args) {
+	}
+
+	public static void desenvolvedormaior30() {
+		System.out.println("Desenvolvedor;\r\n"
+				 + "\r\n"
+				 + "Parabéns, você apresenta a calma, o foco e a vontade de superar desafios que um \n"
+				 + "desenvolvedor precisa durante a sua carreira.\r\n"
+				 + "E você pode começar estudando de casa, já que temos muitos conteúdos grátis no Youtube,\n" 
+				 + "segue abaixo o link para alguns ótimos canais para iniciar os estudos nessa área:\r\n"
+				 + "\r\n"
+				 + "Curso em vídeo:\r\n"
+				 + "https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists\r\n"
+				 + "\r\n"
+				 + "CFB Cursos\r\n"
+				 + "https://www.youtube.com/c/cfbcursos/playlists\r\n"
+				 + "\r\n"
+				 + "\r\n"
+				 + "E se você busca um curso com um certificado para adicionar no seu Linkedin e currículo,\n" 
+				 + "sugerimos duas plataformas com preços bem competitivos e que cabe no seu orçamento:\r\n"
+				 + "Alura\r\n"
+				 + "\r\n"
+				 + "https://www.alura.com.br/formacoes\r\n"
+				 + "Udemy\r\n"
+				 + "\r\n"
+				 + "https://www.udemy.com/pt/ ");
+	}
+}

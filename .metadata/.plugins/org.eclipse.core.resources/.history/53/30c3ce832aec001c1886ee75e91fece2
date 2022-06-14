@@ -1,0 +1,91 @@
+package ProjetoBloco1;
+
+import java.util.Scanner;
+
+public class Pergunta3 {
+
+	public static void main(String[] args) {
+	}
+	
+		public static void pergunta3() throws InterruptedException{
+		Scanner sc = new Scanner(System.in);
+		
+		 System.out.print("\nT");
+			Thread.sleep(100);
+			System.out.print("e");
+			Thread.sleep(100);
+			System.out.print("r");
+			Thread.sleep(100);
+			System.out.print("c");
+			Thread.sleep(100);
+			System.out.print("e");
+			Thread.sleep(100);
+			System.out.print("i");
+			Thread.sleep(100);
+			System.out.print("r");
+			Thread.sleep(100);
+			System.out.print("a ");
+			Thread.sleep(100);
+			System.out.print("p");
+			Thread.sleep(100);
+			System.out.print("e");
+			Thread.sleep(100);
+			System.out.print("r");
+			Thread.sleep(100);
+			System.out.print("g");
+			Thread.sleep(100);
+			System.out.print("u");
+			Thread.sleep(100);
+			System.out.print("n");
+			Thread.sleep(100);
+			System.out.print("t");
+			Thread.sleep(100);
+			System.out.print("a");
+			Thread.sleep(100);
+			System.out.print(" !\n");
+			Thread.sleep(750); 
+			
+					int contador = 0;
+					String resposta;
+					System.out.println("\nDentre as opções abaixo, qual você acredita ser sua melhor qualidade:\n");
+					System.out.println("A - Habilidade lógica, criatividade;\n");
+					System.out.println("B - Empatia, saber falar e ouvir;\n");
+					System.out.println("C - Habilidade manual, gosto de mexer e desmontar coisas para descobrir\n" 
+									 + "    como elas funcionam;\n");
+				
+					System.out.print("\nResposta: ");
+					resposta = sc. next();
+					
+					while(contador == 0) {
+					
+						switch(resposta) {
+					
+							case "A","a" :
+								System.out.println("\nVocê escolheu: A.");
+							    contador ++;
+							    Contador2.contador2();
+								break;
+						
+							case "B","b" :
+								System.out.println("\nVocê escolheu: B.");
+								contador ++;
+								Contador3.contador3();
+								break;
+						
+							case "C","c" :
+								System.out.println("\nVocê escolheu: C.");
+								contador ++;
+								Contador1.contador1();
+								break;
+						
+							default :
+								System.out.println("\nResposta invalida !");
+								System.out.print("\nResposta: ");
+								resposta = sc. next();
+								break;
+							
+			}
+		} Thread.sleep(750);
+	}
+
+}

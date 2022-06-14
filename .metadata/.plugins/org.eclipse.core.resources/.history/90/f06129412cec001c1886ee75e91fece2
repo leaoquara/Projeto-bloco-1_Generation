@@ -1,0 +1,91 @@
+package ProjetoBloco1;
+
+import java.util.Scanner;
+
+public class Pergunta2  extends Contador1{
+
+	public static void main(String[] args) {
+	}
+	
+		public static void pergunta2() throws InterruptedException {
+		Scanner sc = new Scanner(System.in);
+
+		int contador1 = 0, contador2 = 0, contador3 = 0;
+		
+		 System.out.print("\nS");
+			Thread.sleep(100);
+			System.out.print("e");
+			Thread.sleep(100);
+			System.out.print("g");
+			Thread.sleep(100);
+			System.out.print("u");
+			Thread.sleep(100);
+			System.out.print("n");
+			Thread.sleep(100);
+			System.out.print("d");
+			Thread.sleep(100);
+			System.out.print("a ");
+			Thread.sleep(100);
+			System.out.print("p");
+			Thread.sleep(100);
+			System.out.print("e");
+			Thread.sleep(100);
+			System.out.print("r");
+			Thread.sleep(100);
+			System.out.print("g");
+			Thread.sleep(100);
+			System.out.print("u");
+			Thread.sleep(100);
+			System.out.print("n");
+			Thread.sleep(100);
+			System.out.print("t");
+			Thread.sleep(100);
+			System.out.print("a");
+			Thread.sleep(100);
+			System.out.print(" !\n");
+			Thread.sleep(750); 
+			
+					int contador = 0;
+					String resposta;
+					System.out.println("\nMeu hobby favorito é ...\n");
+					System.out.println("A - Encontrar os amigos, fazer video chamadas com os que moram longe e\n"
+							         + "    manter contato e socializar;\n");
+					System.out.println("B - ler, ouvir música e ficar em casa;\n");
+					System.out.println("A - Ir para festas, barzinhos, teatro, cinema, eventos culturais;\n");
+				
+					System.out.print("\nResposta: ");
+					resposta = sc. next();
+					
+					while(contador == 0) {
+					
+						switch(resposta) {
+					
+							case "A","a" :
+								System.out.println("\nVocê escolheu: A.");
+							    contador ++;
+							    Contador3.contador3(contador3);
+								break;
+						
+							case "B","b" :
+								System.out.println("\nVocê escolheu: B.");
+								contador ++;
+								Contador2.contador2(contador2);
+								break;
+						
+							case "C","c" :
+								System.out.println("\nVocê escolheu: C.");
+								contador ++;
+								Contador1.contador1(contador1);
+								break;
+								
+							default :
+								System.out.println("\nResposta invalida !");
+								System.out.print("\nResposta: ");
+								resposta = sc. next();
+								break;
+							
+			}
+		} Thread.sleep(750);
+	}
+
+}

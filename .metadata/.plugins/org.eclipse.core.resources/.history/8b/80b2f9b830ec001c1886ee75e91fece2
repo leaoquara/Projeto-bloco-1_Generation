@@ -1,0 +1,25 @@
+package ProjetoBloco1;
+
+public class RedesInfraestrutura {
+	public static void main(String[] args) {
+	}
+
+	public static void redesinfrastrutura() {
+		System.out.println("Redes/infrastrutura\r\n"
+				+ "\r\n"
+				+ "Parabéns, você apresenta a verdadeira energia e curiosidade de um profissional de TI\n" 
+				+ "da área de Redes/Infraestrutura. Você gosta de desmontar tudo para ver como funciona \n"
+				+ "por dentro. Aqui vai algumas dicas para o começo de um estudo gratuito em hardware:\r\n"
+				+ "\r\n"
+				+ "Canal Adrenaline\r\n"
+				+ "https://www.youtube.com/playlist?list=PLB3bkcT5ue2gQdII6KKwhloyl2AvtSWL9\r\n"
+				+ "\r\n"
+				+ "Prof Washington Luis\r\n"
+				+ "https://www.youtube.com/playlist?list=PLplOmnHpWX-e5E2VOYVa5_0E8tvwxUYA8\r\n"
+				+ "\r\n"
+				+ "E se você quer aprender mais sobre hardware em um curso técnico presencial e com direito \n" 
+				+ "a bolsa de estudo gratuita em Redes e Informática, busque mais informações no link abaixo \n"
+				+ "e fique atento a novas turmas:\r\n"
+				+ "\nhttps://www.sp.senac.br/bolsas-de-estudo");
+	}
+}

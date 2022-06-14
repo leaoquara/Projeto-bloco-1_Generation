@@ -1,0 +1,12 @@
+package ProjetoBloco1;
+
+public class Contador {
+
+	public static void main(String[] args) throws InterruptedException { 
+
+		int contador1 = 0, contador2 = 0, contador3 = 0;
+		
+
+	}
+
+}

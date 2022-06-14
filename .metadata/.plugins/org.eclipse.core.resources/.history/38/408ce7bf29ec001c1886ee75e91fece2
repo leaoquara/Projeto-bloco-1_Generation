@@ -1,0 +1,17 @@
+package ProjetoBloco1;
+
+public class Contador1 {
+
+
+
+	public static void main(String[] args) { 
+	}
+	
+	public static void contador1(int soma) {
+		int contador1 = 0;
+		
+		while(contador1 <=5) {
+			contador1++;
+		}soma += contador1; 	
+	}
+}

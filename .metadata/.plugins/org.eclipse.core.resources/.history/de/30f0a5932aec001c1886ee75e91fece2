@@ -1,0 +1,88 @@
+package ProjetoBloco1;
+
+import java.util.Scanner;
+
+public class Pergunta4 {
+
+	public static void main(String[] args) {
+	}
+	
+		public static void pergunta4() throws InterruptedException{
+		Scanner sc = new Scanner(System.in);
+		
+		int contador1 = 0, contador2 = 0, contador3 = 0;
+		
+		System.out.print("\nQ");
+		Thread.sleep(100);
+		System.out.print("u");
+		Thread.sleep(100);
+		System.out.print("a");
+		Thread.sleep(100);
+		System.out.print("r");
+		Thread.sleep(100);
+		System.out.print("t");
+		Thread.sleep(100);
+		System.out.print("a ");
+		Thread.sleep(100);
+		System.out.print("p");
+		Thread.sleep(100);
+		System.out.print("e");
+		Thread.sleep(100);
+		System.out.print("r");
+		Thread.sleep(100);
+		System.out.print("g");
+		Thread.sleep(100);
+		System.out.print("u");
+		Thread.sleep(100);
+		System.out.print("n");
+		Thread.sleep(100);
+		System.out.print("t");
+		Thread.sleep(100);
+		System.out.print("a");
+		Thread.sleep(100);
+		System.out.print(" !\n");
+		Thread.sleep(750);
+		
+				int contador = 0;
+				String resposta;
+				System.out.println("\nNa escola eu me identificava mais com: \n");
+				System.out.println("A - Trabalhos em equipe como, por exemplo montar maquetes e projetos;\n");
+				System.out.println("B - História, literatura, geografia;\n");
+				System.out.println("C - Resolver problemas lógicos e educação artística;\n");
+			
+				System.out.print("\nResposta: ");
+				resposta = sc. next();
+				
+				while(contador == 0) {
+				
+					switch(resposta) {
+				
+						case "A","a" :
+							System.out.println("\nVocê escolheu: A.");
+						    contador ++;
+						    Contador1.contador1(contador1);
+							break;
+					
+						case "B","b" :
+							System.out.println("\nVocê escolheu: B.");
+							contador ++;
+							Contador3.contador3(contador2);
+							break;
+					
+						case "C","c" :
+							System.out.println("\nVocê escolheu: C.");
+							contador ++;
+							Contador2.contador2(contador3);
+							break;
+					
+						default :
+							System.out.println("\nResposta invalida !");
+							System.out.print("\nResposta: ");
+							resposta = sc. next();
+							break;
+						
+			}
+		} Thread.sleep(750);
+	}
+
+}

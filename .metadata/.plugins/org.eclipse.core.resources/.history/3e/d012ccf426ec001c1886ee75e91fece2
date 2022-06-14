@@ -1,0 +1,18 @@
+package ProjetoBloco1;
+
+public class Contador {
+
+
+	public Contador() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) throws InterruptedException { 
+
+		int contador1 = 0, contador2 = 0, contador3 = 0;
+		
+		
+		
+	}
+
+}

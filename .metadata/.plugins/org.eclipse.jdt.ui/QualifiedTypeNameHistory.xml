@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ProjetoBloco1.Contador3"/>
+    <fullyQualifiedTypeName name="ProjetoBloco1.Contador1"/>
+    <fullyQualifiedTypeName name="ProjetoBloco1.Contador2"/>
+</qualifiedTypeNameHistroy>

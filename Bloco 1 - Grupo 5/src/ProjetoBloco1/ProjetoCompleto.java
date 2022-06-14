@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ProjetoCompleto {
 
-	public static int contador1 , contador2 , contador3 = 1;
+	public static int contador1 , contador2 , contador3;
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) throws InterruptedException {
@@ -15,42 +15,9 @@ public class ProjetoCompleto {
 		int idade;
 		String nome;
 		
-		System.out.print("O");
-		Thread.sleep(300);
-		System.out.print("l");
-		Thread.sleep(300);
-		System.out.print("á");
-		Thread.sleep(300);
-		System.out.print(", ");
-		Thread.sleep(300);
-		System.out.print("s");
-		Thread.sleep(300);
-		System.out.print("e");
-		Thread.sleep(300);
-		System.out.print("j");
-		Thread.sleep(300);
-		System.out.print("a ");
-		Thread.sleep(300);
-		System.out.print("b");
-		Thread.sleep(300);
-		System.out.print("e");
-		Thread.sleep(300);
-		System.out.print("m ");
-		Thread.sleep(300);
-		System.out.print("v");
-		Thread.sleep(300);
-		System.out.print("i");
-		Thread.sleep(300);
-		System.out.print("n");
-		Thread.sleep(300);
-		System.out.print("d");
-		Thread.sleep(300);
-		System.out.print("o ");
-		Thread.sleep(300);
-		System.out.print("!\n");
-		Thread.sleep(750);
+		Olá.Ola();
 		
-		espaço();
+		Loading.loading();
 		
 		System.out.println("\nIremos te passar algumas perguntas para podermos te mostrar\n"
 		                 + "a melhor maneira de começar a estudar para entrar no mundo tech.\n" 
@@ -58,7 +25,7 @@ public class ProjetoCompleto {
 		                 
 		Thread.sleep(1500);
 		
-		espaço();
+		Loading.loading();
 		
 		System.out.print("\nDigite seu nome: ");
 		nome = sc.next();
@@ -68,29 +35,36 @@ public class ProjetoCompleto {
 		System.out.print("\nDigite sua idade: ");
 		idade = sc.nextInt();
 		
+			while(idade <= 0) {
+				System.out.println("\nVocê não pode ter menos de 0 anos de idade.");
+				Thread.sleep(750);
+				System.out.print("\nDigite sua idade: ");
+				idade = sc.nextInt();
+				}
+			
 		Thread.sleep(750);
 		
-		espaço();	
+		Loading.loading();	
 		
 		pergunta1();
 		
-		espaço();
+		Loading.loading();
 		
 		pergunta2();
 
-		espaço();
+		Loading.loading();
 		
 		pergunta3();
 		
-		espaço();
+		Loading.loading();
 		
 		pergunta4();
 		
-		espaço();
+		Loading.loading();
 		
 		pergunta5();
 		
-		espaço();
+		Loading.loading();
 		
 		System.out.println("\nObrigado por completar nosso teste !\n");
 		
@@ -101,131 +75,61 @@ public class ProjetoCompleto {
 		Thread.sleep(1000);
 		
 		if(contador1 > contador2 && contador1 > contador3) {
-			System.out.println("Redes/infrastrutura\r\n"
-					+ "\r\n"
-					+ "Parabéns, você apresenta a verdadeira energia e curiosidade de um profissional de TI\n" 
-					+ "da área de Redes/Infraestrutura. Você gosta de desmontar tudo para ver como funciona \n"
-					+ "por dentro. Aqui vai algumas dicas para o começo de um estudo gratuito em hardware:\r\n"
-					+ "\r\n"
-					+ "Canal Adrenaline\r\n"
-					+ "https://www.youtube.com/playlist?list=PLB3bkcT5ue2gQdII6KKwhloyl2AvtSWL9\r\n"
-					+ "\r\n"
-					+ "Prof Washington Luis\r\n"
-					+ "https://www.youtube.com/playlist?list=PLplOmnHpWX-e5E2VOYVa5_0E8tvwxUYA8\r\n"
-					+ "\r\n"
-					+ "E se você quer aprender mais sobre hardware em um curso técnico presencial e com direito \n" 
-					+ "a bolsa de estudo gratuita em Redes e Informática, busque mais informações no link abaixo \n"
-					+ "e fique atento a novas turmas:\r\n"
-					+ "\nhttps://www.sp.senac.br/bolsas-de-estudo");
+			Loading.loading();
+			RedesInfraestrutura.redesinfrastrutura();
 }
 		
 		if(contador2 > contador1 && contador2 > contador3) {
 			if(idade > 30) {
-				System.out.println("Desenvolvedor;\r\n"
-								 + "\r\n"
-								 + "Parabéns, você apresenta a calma, o foco e a vontade de superar desafios que um \n"
-								 + "desenvolvedor precisa durante a sua carreira.\r\n"
-								 + "E você pode começar estudando de casa, já que temos muitos conteúdos grátis no Youtube,\n" 
-								 + "segue abaixo o link para alguns ótimos canais para iniciar os estudos nessa área:\r\n"
-								 + "\r\n"
-								 + "Curso em vídeo:\r\n"
-								 + "https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists\r\n"
-								 + "\r\n"
-								 + "CFB Cursos\r\n"
-								 + "https://www.youtube.com/c/cfbcursos/playlists\r\n"
-								 + "\r\n"
-								 + "\r\n"
-								 + "E se você busca um curso com um certificado para adicionar no seu Linkedin e currículo,\n" 
-								 + "sugerimos duas plataformas com preços bem competitivos e que cabe no seu orçamento:\r\n"
-								 + "Alura\r\n"
-								 + "\r\n"
-								 + "https://www.alura.com.br/formacoes\r\n"
-								 + "Udemy\r\n"
-								 + "\r\n"
-								 + "https://www.udemy.com/pt/ ");
+				Loading.loading();
+				DesenvolvedorMaior30.desenvolvedormaior30();
 }
 			if (idade <= 30) {
-				System.out.println("Desenvolvedor;\r\n"
-								 + "\r\n"
-								 + "Parabéns, você apresenta a calma, o foco e a vontade de superar desafios que um \n"
-								 + "desenvolvedor precisa durante a sua carreira.\r\n"
-								 + "E você pode começar estudando de casa, já que temos muitos conteúdos grátis no Youtube,\n" 
-								 + "segue abaixo o link para alguns ótimos canais para iniciar os estudos nessa área:\r\n"
-								 + "\r\n"
-								 + "Curso em vídeo:\r\n"
-								 + "https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists\r\n"
-								 + "\r\n"
-								 + "CFB Cursos\r\n"
-								 + "https://www.youtube.com/c/cfbcursos/playlists\r\n"
-								 + "\r\n"
-								 + "                              **Generation**                                     \r\n"
-								 + "E se você tem vontade de viver uma verdadeira imersão no mundo do desenvolvimento, \n"
-								 + "recomendamos também os bootcamp's da Generation Brasil voltados ao desenvolvimento\n" 
-								 + "Web - JAVA, .NET e Mobile.\n" 
-								 + "Veja mais informações sobre como se cadastrarno link abaixo:\r\n"
-								 + "\nhttps://brazil.generation.org/#picker\r\n"
-								 + "\r\n");
+				Loading.loading();
+				DesenvolvedorMenor30.desenvolvedormenor30();
 	}
 }
 		
 		if(contador3 > contador2 && contador3 > contador1) {
-			System.out.println("Docente.\r\n"
-							 + "\r\n"
-							 + "Parabéns, você tem o perfil de um docente! Você apresenta as características de um bom\n"
-							 + "professor, tem empatia e preza muito pela sua vida social e amigos. Recomendamos que\n" 
-							 + "você sonhe alto e busque possibilidades no ensino superior. Bolsas governamentais\r\n"
-							 + "como o FIES, ProUni são ofertadas para quem tem uma boa pontuação no ENEM, mas você\n" 
-							 + "também pode fazer o vestibular para as Fatec's.\r\n"
-							 + "Segue o link abaixo:\r\n"
-							 + "\r\n"
-							 + "FATEC-SP\r\n"
-							 + "http://www.fatecsp.br/index.php#cursos\r\n"
-							 + "\r\n"
-							 + "FIES\r\n"
-							 + "https://www.caixa.gov.br/programas-sociais/fies/Paginas/default.aspx\r\n"
-							 + "\r\n"
-							 + "PROUNI\r\n"
-							 + "https://acessounico.mec.gov.br/prouni");
+			Loading.loading();
+			Docente.docente();	
 			
 	}
+		if(contador1 > contador2 && contador1 == contador3) {
+			Loading.loading();
+			RedesInfraestrutura.redesinfrastrutura();
+			Docente.docente();
+}
+		
+		if(contador2 > contador1 && contador2 == contador3) {
+			if(idade > 30) {
+				Loading.loading();
+				DesenvolvedorMaior30.desenvolvedormaior30();
+				Docente.docente();
+}			
+			if (idade <= 30) {
+				Loading.loading();
+				DesenvolvedorMenor30.desenvolvedormenor30();
+				Docente.docente();
+	}
+}
+		
+		if(contador2 > contador3 && contador2 == contador1) {
+			if(idade > 30) {
+				Loading.loading();
+				DesenvolvedorMaior30.desenvolvedormaior30();
+				RedesInfraestrutura.redesinfrastrutura();
+}			
+			if (idade <= 30) {
+				Loading.loading();
+				DesenvolvedorMenor30.desenvolvedormenor30();
+				RedesInfraestrutura.redesinfrastrutura();
+		}
+	}	
 }	
-	
 			public static void pergunta1() throws InterruptedException {
 		
-	    System.out.print("\nP");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("i");
-		Thread.sleep(100);
-		System.out.print("m");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("i");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("a ");
-		Thread.sleep(100);
-		System.out.print("p");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print(" !\n");
-		Thread.sleep(750); 
+			Pergunta1.pergunta1();
 		
 				int contador = 0;
 				String resposta;
@@ -270,38 +174,8 @@ public class ProjetoCompleto {
 }
 	
 			public static void pergunta2() throws InterruptedException {
-	    System.out.print("\nS");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("d");
-		Thread.sleep(100);
-		System.out.print("a ");
-		Thread.sleep(100);
-		System.out.print("p");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print(" !\n");
-		Thread.sleep(750); 
+	    
+			Pergunta2.pergunta2();
 		
 				int contador = 0;
 				String resposta;
@@ -347,41 +221,9 @@ public class ProjetoCompleto {
 }
 	
 			public static void pergunta3() throws InterruptedException {
-	    System.out.print("\nT");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("c");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("i");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("a ");
-		Thread.sleep(100);
-		System.out.print("p");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print(" !\n");
-		Thread.sleep(750); 
-		
+	  
+			Pergunta3.pergunta3();
+				
 				int contador = 0;
 				String resposta;
 				System.out.println("\nDentre as opções abaixo, qual você acredita ser sua melhor qualidade:\n");
@@ -427,36 +269,7 @@ public class ProjetoCompleto {
 			
 			public static void pergunta4() throws InterruptedException {
 		
-		System.out.print("\nQ");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a ");
-		Thread.sleep(100);
-		System.out.print("p");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print(" !\n");
-		Thread.sleep(750);
+		Pergunta4.pergunta4();
 		
 				int contador = 0;
 				String resposta;
@@ -502,38 +315,8 @@ public class ProjetoCompleto {
 		
 			public static void pergunta5() throws InterruptedException {
 		
-		
-	    System.out.print("\nQ");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("i");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a ");
-		Thread.sleep(100);
-		System.out.print("p");
-		Thread.sleep(100);
-		System.out.print("e");
-		Thread.sleep(100);
-		System.out.print("r");
-		Thread.sleep(100);
-		System.out.print("g");
-		Thread.sleep(100);
-		System.out.print("u");
-		Thread.sleep(100);
-		System.out.print("n");
-		Thread.sleep(100);
-		System.out.print("t");
-		Thread.sleep(100);
-		System.out.print("a");
-		Thread.sleep(100);
-		System.out.print(" !\n");
-		Thread.sleep(750); 
-		
+			Pergunta5.pergunta5();
+	    
 				int contador = 0;
 				String resposta;
 				System.out.println("\nQuando faz um trabalho em grupo, você é aquele(a) que:\n");
@@ -572,16 +355,7 @@ public class ProjetoCompleto {
 							resposta = sc. next();
 							break;
 						
-		}
-	} Thread.sleep(750);
-}	
-			
-			public static void espaço() throws InterruptedException {
-				
-			System.out.println(" ");
-			for(int i = 0; i < 90; i++) {
-				System.out.print("-");
-				Thread.sleep(15);
-		}	System.out.println(" ");
-	}		
+			}
+		} Thread.sleep(750);
+	}							
 }
